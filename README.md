@@ -1,4 +1,5 @@
 # Sistema-Aseguradora
+
 Private Sub Validar_Click()
 'Validar Usuarios
 If login <> "" And Password <> "" Then
@@ -13,6 +14,4 @@ Else
 Else
   MsgBox "Faltan Datos"
   End If
-  
-
 End Sub
