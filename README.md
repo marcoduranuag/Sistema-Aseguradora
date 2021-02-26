@@ -1,5 +1,6 @@
 # Sistema-Aseguradora
 'Aqui es donde se lleva acabo el login del usuario mediante su contraseña y su usuario registrado en la base de datos'
+
 Private Sub Validar_Click()
 'Validar Usuarios
 If login <> "" And Password <> "" Then
@@ -19,6 +20,7 @@ Else
 End Sub
 
 'Aqui es donde se lleva a cabo el formulario que recaba los datos del usuario para poder darte la cotizacion del seguro y todos los datos que ingresaste en una tabla.
+
 Private Sub Guardar_Click()
 Range("A2:N2").Insert
 Range("A2") = Val(Poliza)
@@ -28,6 +30,7 @@ Range("D2") = SeguS
 Range("E2") = "=vlookup(D2,DM,2,0)"
 
 'Aqui es la parte donde se registran los empleados y se calcula la nomina
+
 Private Sub calcular_Click()
 If puesto <> "" And Resgitro <> "" And nombre <> "" Then
 
@@ -51,6 +54,7 @@ Range("i2") = sueldo
  End If
  
  'este es el codigo que te muestra la ventana de empleados y la de venta, tambien se regresan a la anterior de ser requeridos'
+ 
 Private Sub Trabajadores_Click()
 MsgBox "Trabajadores"
    opciones.Hide
